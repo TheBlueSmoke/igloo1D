@@ -14,21 +14,26 @@ x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=False)
 
 1-b returning a sequence (of size L=1000) of a sequence by slicing a feature space of size K=50:
 
+```
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True)
+```
 
 1-b returning the last 10 elements of a sequence (used in the copy memory task):
 
+```
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True,nb_sequences=10)
+```
 
 live example in "N_copymemory_classification_igloo.py"
 
 
 # Advanced Usage
 
-
+```
 IGLOO1D(input_layer,nb_patches,nb_filters_conv1d,return_sequences,patch_size=4,
         padding_style="causal",stretch_factor=1,nb_stacks=1,l2reg=0.00001,conv1d_kernel=3,
         max_pooling_kernel=1,DR=0.0,add_residual=True,nb_sequences=-1,build_backbone=False,psy=0.15)
+```
 
 input_layer:        Keras layer used as input  
 nb_patches:         number L of patches taken at random from the feature space. This is the main dimension parameter.
