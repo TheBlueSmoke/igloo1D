@@ -35,8 +35,8 @@ IGLOO1D(input_layer,nb_patches,nb_filters_conv1d,return_sequences,patch_size=4,
         max_pooling_kernel=1,DR=0.0,add_residual=True,nb_sequences=-1,build_backbone=False,psy=0.15)
 ```
 
-**input_layer**:                        Keras layer used as input.
-**nb_patches**:                         Number L of patches taken at random from the feature space. This is the main dimension                                                   parameter. A fair value to use is around the number of steps in the sequence to study if                                                 return_sequences=False, or can use 30 to 70 if return_sequences=True.
+**input_layer**:                        Keras layer used as input.  
+**nb_patches**:                         Number L of patches taken at random from the feature space. This is the main dimension                                                   parameter. A fair value to use is around the number of steps in the sequence to study if                                                 return_sequences=False, or can use 30 to 70 if return_sequences=True.  
 **nb_filters_conv1d**:                  Size of the internal convolution K whc\ich transform the input_layer  
 **return_sequences**:                   False to return only the full sequence representation  
 **patch_size**:                         This is the number of slices taken to form a patch .Typical value is 4. Adding more increases                                           fitting and adds the number of parameters.  
