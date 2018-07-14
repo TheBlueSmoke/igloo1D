@@ -24,7 +24,7 @@ x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True)
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True,nb_sequences=10)
 ```
 
-live example in "N_copymemory_classification_igloo.py"
+live example in "copymemory.py"
 
 
 # Advanced Usage
