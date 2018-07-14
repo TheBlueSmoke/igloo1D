@@ -52,3 +52,7 @@ IGLOO1D(input_layer,nb_patches,nb_filters_conv1d,return_sequences,patch_size=4,
                                         (For the copy memory task for example).  
 **build_backbone**                      When the number of patches is large, IGLOO can use some patches arranged in a non random way to                                         better cover the input space. This is set to True by default for return_sequences=False and to                                           False for  return_sequences=True. If set to True, then nb_steps/3 patches are required as a                                             minimum.  
 **psy**                                 When return_sequences=True, this is the proportion of Local Patches (as per paper description)                                           with respect to the number L of global patches. A typical value is 0.15.  
+
+# Libraries
+- Keras 2.1.5+
+- Tensorflow 
