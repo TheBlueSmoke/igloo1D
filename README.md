@@ -12,7 +12,7 @@ from igloo1d import *
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=False)
 ```
 
-1-b returning a sequence (of size L=1000) of a sequence by slicing a feature space of size K=50:
+1-b returning a sequence of the same length as the input sequence by slicing a feature space of size K=50 (using L=50):
 
 ```
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True)
@@ -36,7 +36,7 @@ IGLOO1D(input_layer,nb_patches,nb_filters_conv1d,return_sequences,patch_size=4,
 ```
 
 **input_layer**:                        Keras layer used as input.
-**nb_patches**:                         Number L of patches taken at random from the feature space. This is the main dimension                                                   parameter. A fair value to use is around the number of steps in the sequence to study. This can                                         vary depending on the task.  
+**nb_patches**:                         Number L of patches taken at random from the feature space. This is the main dimension                                                   parameter. A fair value to use is around the number of steps in the sequence to study if                                                 return_sequences=False, or can use 30 to 70 if return_sequences=True.
 **nb_filters_conv1d**:                  Size of the internal convolution K whc\ich transform the input_layer  
 **return_sequences**:                   False to return only the full sequence representation  
 **patch_size**:                         This is the number of slices taken to form a patch .Typical value is 4. Adding more increases                                           fitting and adds the number of parameters.  
