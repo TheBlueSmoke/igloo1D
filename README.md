@@ -21,7 +21,7 @@ x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=False)
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True)
 ```
 
-1-b returning the last 10 elements of a sequence (used in the copy memory task):
+1-c returning the last 10 elements of a sequence (used in the copy memory task):
 
 ```
 x=IGLOO1D(y,nb_patches=L,nb_filters_conv1d=K,return_sequences=True,nb_sequences=10)
