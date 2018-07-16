@@ -1,5 +1,7 @@
 # IGLOO1D
 Implementation for Keras/Tensorflow of IGLOO for sequences, based on the paper "IGLOO: Slicing the Feature Space to Represent Long Sequences".  
+
+https://arxiv.org/abs/1807.03402
   
 PyTorch implementation required
 
